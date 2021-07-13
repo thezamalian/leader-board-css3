@@ -95,7 +95,7 @@ hr {
     width: 252px;
 }
 .course-title {
-    font-size: 21px;
+    /* font-size: 21px; */
 }
 .course .course-banner img {
     width: 224px;
@@ -106,6 +106,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 .fa-star {
     font-size: 12px;
@@ -130,3 +131,30 @@ hr {
 /*-------------------------
     Mobile Devices 
 -------------------------*/
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    }
+}
+
+/*----------------------
+    Tablet devices 
+------------------------*/
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
