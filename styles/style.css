@@ -145,7 +145,7 @@ hr {
 }
 
 /*----------------------
-    Tablet devices 
+    Responsive for Tablet devices 
 ------------------------*/
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     .container {
